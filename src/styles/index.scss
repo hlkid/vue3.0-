@@ -1,0 +1,215 @@
+/*
+* css入口
+*/
+@import './variables.scss';
+
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Microsoft YaHei, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Arial, sans-serif;
+  background: #f0f2f5;
+
+}
+dl,dd,dt,p{
+  margin: 0;
+  margin: 0;
+}
+ul,ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .fl{
+    float: left;
+  }
+  .fr{
+    float: right;
+  }
+}
+.pointer{
+  cursor: pointer;
+}
+
+/*垂直局中开始*/
+.vertical{
+  &:after{
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    content: '';
+    font-size: 0;
+    letter-spacing: 0;
+    vertical-align: middle;
+  }
+  .vertical-content{
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+/*垂直局中结束*/
+/*margin and padding*/
+.pr10{
+  padding-right: 10px;
+}
+.pl10{
+  padding-left: 10px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mt15{
+  margin-top: 15px;
+}
+.mr10{
+  margin-right: 10px;
+}
+/*margin and padding*/
+/*师徒区域内容列表和查询条件*/
+.view-container{
+  min-height: 100%;
+  padding: 0 20px;
+  .search-form{
+    margin-top: 15px;
+    padding: 20px 20px 0;
+    border: 1px solid #eee;
+    background: #fff;
+  }
+  .list-wraper{
+    margin-top: 15px;
+    padding: 20px;
+    border: 1px solid #eee;
+    background: #fff;
+    .btn-wraper{
+      margin-bottom: 20px;
+    }
+  }
+}
+/*资源，机构，部门，页面树形样式 开始*/
+.tree-container{
+  //margin-top: 20px;
+  //padding: 20px;
+  font-size: 12px;
+  background-color: #fff;
+  .tree-head{
+    margin-bottom: 10px;
+    padding: 15px 0;
+    background: #f0f2f5;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    .node-name{
+      padding-left: 10px;
+    }
+  }
+  .node-handle{
+    width: 200px;
+    min-height: 10px;
+  }
+  .node-type{
+    width: 150px;
+    &.is-menu{
+      color: green;
+    }
+  }
+  .node-sort{
+    width: 100px;
+  }
+  .node-url{
+    width: 300px;
+    text-align: left;
+  }
+  .isBtn{
+    color: #aaa;
+  }
+}
+/*资源，机构，部门，页面树形样式 结束*/
+
+
+.el-message--primary{
+  color: #409eff;
+}
+/*树形下拉选择*/
+.select-tree{
+  width: 200px;
+  min-height: 100px;
+  max-height: 250px;
+}
+
+.el-picker-panel,.el-select-dropdown{
+  z-index: 100000!important;
+}
+
+/*表格操作按钮样式*/
+.el-table{
+  td{
+    padding: 5px!important;
+    .cell{
+      padding: 0!important;
+      .el-button{
+        margin: 3px!important;
+      }
+    }
+  }
+
+}
+

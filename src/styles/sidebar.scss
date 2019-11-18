@@ -1,0 +1,24 @@
+/*
+* 管理系统侧边栏
+*/
+.layout-wrapper{
+  transition: all .28s;
+  &#show-sidebar{
+    padding-left: 70px;
+    .sidebar-wraper{
+      width: 70px;
+      &:hover{
+        .sidebar-menu-wraper{
+          left: 70px;
+        }
+      }
+      .sidebar-menu-wraper{
+        transition: all .28s;
+        left: -160px;
+        z-index: 999;
+        background: #fff;
+      }
+    }
+  }
+}
+

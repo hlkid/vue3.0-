@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=0.3, maximum-scale=1, minimum-scale=0">
+  <link rel="icon" href="<%= BASE_URL %>ico/favicon-<%= VUE_APP_BASE_ENNAME %>.ico">
+  <title><%= VUE_APP_BASE_NAME %></title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scrollbar-face-color: #99a9bf;
+      /**/
+      /*立体滚动条的颜色*/
+    }
+
+    /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    /*定义滑块 内阴影+圆角*/
+    ::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: #99a9bf;
+    }
+  </style>
+</head>
+<body>
+<noscript>
+  <strong>We're sorry but mcc-admin doesn't work properly without JavaScript enabled. Please enable it to
+    continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+
+</html>

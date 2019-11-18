@@ -1,0 +1,490 @@
+//.el-dialog__wrapper{
+//  z-index: 999999999!important;
+//}
+/*
+* element-ui重置
+*/
+
+//登录form
+.login-form{
+  padding: 40px 70px 0;
+  .el-form-item{
+    margin-bottom: 20px;
+    .el-form-item__content{
+      line-height: 51px;
+      input{
+        line-height: 51px;
+        height: 51px;
+        padding-left: 40px;
+      }
+      .el-input__prefix{
+        font-size: 24px;
+        margin: 0 5px;
+      }
+    }
+  }
+  .el-button--primary{
+    width: 100%;
+    line-height: 51px;
+    height: 51px;
+    padding: 0;
+    font-size: 18px;
+    background-color: #0079FE;
+    border-color: #0079FE;
+    &:hover{
+      background-color: #66b1ff;
+      border-color: #66b1ff;
+    }
+  }
+}
+/*tree 操作按钮的样式*/
+.el-tree-node__content{
+  height: 32px;
+  .custom-tree-node{
+    display: block;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+  }
+}
+/*form 表单查询*/
+.search-form{
+  .el-input{
+    width: 200px;
+  }
+  .dialog-name{
+    width:200px;
+    color: #666;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: solid 1px #DCDFE6;
+  }
+}
+.el-dialog{
+  .search-form{
+    .el-input{
+      width: 150px;
+    }
+  }
+}
+.unified-form{
+  margin-top: 20px;
+  padding: 30px 20px;
+  background: #fff;
+  .el-form-item__content{
+    width: 320px;
+    .el-select,.el-date-editor{
+      width: 100%;
+      .el-range-separator{
+        width: 50px;
+      }
+    }
+  }
+
+  .btns-waper{
+    margin-top: 80px;
+    text-align: center;
+    .el-button{
+      width: 120px;
+    }
+  }
+}
+/*form 表单对话框*/
+.dialog-form{
+  margin: 0;
+  position: relative;
+  .edit-form{
+    width: 100%;
+    .el-form-item__content{
+      width:  700px!important;
+    }
+  }
+  .dialog-name{
+    color: #666;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: solid 1px #DCDFE6;
+  }
+  .el-input,.el-textarea,.el-select{
+    width: 100%;
+  }
+  &.el-form--inline{
+    .el-form-item{
+      width: 49%;
+      margin-right: 0;
+      &.block{
+        min-width: 49%;
+      }
+      //margin: 0;
+      .el-form-item__content{
+        width: 200px;
+      }
+    }
+    .upload-item{
+      width: 100%;
+      .el-form-item__content{
+        width: 540px;
+      }
+    }
+
+  }
+
+}
+/*form 行内表单*/
+.hbsx-form{
+  margin-top: 20px;
+  padding: 30px 0;
+  background: #fff;
+  .el-form-item__content{
+    width: 220px;
+    .el-select{
+      width: 100%;
+    }
+  }
+  .form-item-sumy{
+    padding: 0 30px;
+    .el-form-item__content{
+      width: 100%;
+      margin-left: 0 !important;
+    }
+  }
+  .block{
+    display: block;
+    .el-form-item__content{
+      width: auto;
+      .el-textarea{
+        width: 575px;
+      }
+    }
+  }
+  &.el-form--inline{
+    .upload-item{
+      width: 100%;
+      .el-form-item__content{
+        width: 540px;
+      }
+    }
+    .edit-form{
+      width: 100%;
+      .el-form-item__content{
+        width: 800px!important;
+      }
+    }
+  }
+  .btns-waper{
+    margin-top: 80px;
+    text-align: center;
+    .el-button{
+      width: 120px;
+    }
+  }
+}
+/*分割线*/
+.divider-title{
+  margin: 40px 0;
+  height: 1px;
+  width: 100%;
+  position: relative;
+  background-color: #dcdfe6;
+  &.top{
+    margin-top: 0;
+  }
+  i{
+    margin-right: 3px;
+  }
+  .divider-title_text{
+    padding: 0 15px;
+    background: #fff;
+    left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: #0079FE;
+  }
+}
+/*文本按钮*/
+.el-button--text{
+  font-size: 14px;
+}
+.el-button--primary{
+  background-color: #0079FE;
+}
+.el-button--mini, .el-button--mini.is-round {
+  padding: 5px;
+}
+/*el滚动条样式*/
+  .el-scrollbar{
+    height: 100%;
+    width: 100%;
+    .scrollbar-wrapper{
+      overflow-x: hidden;
+    }
+    .el-scrollbar__view{
+      height: 100%;
+    }
+    .el-scrollbar__wrap{
+      margin-bottom: 0 !important;
+      overflow-x: auto;
+    }
+  }
+
+/*table*/
+/*移除全选*/
+.delete-select-all{
+  .cell{
+    &:before{
+      display: inline-block;
+      content: "";
+    }
+    .el-checkbox{
+      display: none;
+    }
+  }
+}
+.el-table--border::after, .el-table--group::after, .el-table::before{
+  background-color:#DCDFE6;
+}
+.el-table{
+  &.el-table--border,th,td,.is-leaf{
+    border-color: #DCDFE6;
+  }
+  .el-checkbox__inner{
+    border-color: #ccc;
+  }
+  .el-table__header{
+    th{
+      padding: 5px 0;
+      background: #f0f2f5;
+      color: #666;
+      font-size: 14px;
+      font-weight: 700;
+      border-color: #DCDFE6;
+    }
+  }
+  .el-table__body{
+    td{
+      font-size: 12px;
+    }
+  }
+}
+.tree-scroll{
+  height: 380px;
+  .el-scrollbar__wrap {
+    overflow-x: hidden;
+  }
+}
+
+/*element loading*/
+.el-loading-spinner i{
+  font-size:36px;
+}
+
+//上传图片 upload
+.avatar-uploader {
+  .el-upload-list--picture-card{
+    .el-upload-list__item{
+      width: 80px;
+      height: 80px;
+    }
+    .el-progress{
+      width: 65px !important;
+        .el-progress-circle{
+          width: 65px !important;
+          height: 65px !important;;
+        }
+    }
+  }
+
+  .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+  .el-upload:hover {
+    border-color: #409EFF;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+    display: block;
+  }
+  .el-upload__tip {
+    font-size: 12px;
+    color: #C0C4CC;
+  }
+  .avatar-uploader{
+    line-height:0 !important;
+  }
+}
+//合同下载附件的 check
+.download-check{
+  .el-checkbox{
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+
+/*element对话框*/
+.select-org{
+  .el-dialog__header,.el-dialog__footer{
+    padding: 15px 20px;
+  }
+  /*.el-dialog__body{
+    padding: 15px 20px;
+  }*/
+  .el-radio{
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .el-radio.is-bordered+.el-radio.is-bordered{
+    margin-left: 0;
+  }
+  .el-radio--mini.is-bordered {
+    padding: 6px 8px 0 5px;
+  }
+}
+/*分割线*/
+.el-divider--horizontal{
+  margin: 30px 0;
+  .el-divider__text{
+    font-size: 16px;
+    color: #0079FE;
+    font-weight: bold;
+  }
+}
+
+.input-with-select{
+  .el-input-group__append{
+    background-color: #fff;
+    width: 80px;
+    .el-select{
+      width: 80px;
+    }
+  }
+}
+
+/*卡片*/
+.purchase-receive{
+  .el-card__header{
+    padding: 0;
+  }
+}
+/*badge*/
+.el-badge{
+  display: block;
+  .el-badge__content.is-fixed{
+    top: 13px;
+    line-height: 15px;
+  }
+}
+.cascader-form{
+  z-index: 99999 !important;
+}
+.table-form{
+  .el-form-item{
+    margin-bottom: 0;
+    .el-form-item__label{
+      letter-spacing: inherit;
+    }
+
+  }
+}
+
+.el-notification{
+  cursor: pointer;
+}
+
+/**/
+.el-form--inline{
+  .el-form-item.block{
+    width: 100%;
+    .el-form-item__content{
+      width: 500px;
+    }
+  }
+}
+.district-wraper{
+  .el-input-group__append{
+    padding: 0;
+    border: 1px solid #DCDFE6;
+    border-radius: 4px;
+    background-color:#fff;
+    .district{
+      width: 35%;
+      margin: 0;
+      &:nth-child(1){
+        width: 30%;
+      }
+    }
+  }
+}
+.single-uploader{
+  position: relative;
+  height: auto;
+  .single-uploader-handle{
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    z-index: 999;
+    font-size: 24px;
+    cursor: pointer;
+    &:hover{
+      color: #409eff;
+    }
+  }
+  .el-upload{
+    border: 1px solid #e0e0e0;
+    .single-uploader-icon {
+      font-size: 40px;
+      color: #8c939d;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+    }
+
+    .single-uploader-img{
+      width: 100px;
+      height: 100px;
+      vertical-align: bottom;
+    }
+
+    .single-uploader-activity{
+      width: 225px;
+      height: 105px;
+      vertical-align: bottom;
+    }
+
+    .single-uploader-venue{
+      width: 226px;
+      height: 105px;
+      vertical-align: bottom;
+    }
+  }
+
+}
+
+.el-link{
+  cursor: default!important;
+}
+
+/**/
+.el-tooltip__popper{
+  max-width: 500px;
+}
